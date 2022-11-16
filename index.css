@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+}
+
+header.nav {
+    background-color: steelblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header.nav div.logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: space-between;
+}
+
+header.nav div.logo span.logo {
+    cursor: pointer;
+}
+
+header.nav div.logo span.toggleIcon {
+    cursor: pointer;
+    display: none;
+}
+
+header.nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header.nav ul li {
+    margin-left: 20px;
+}
+
+header.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    transition: .2s all ease;
+}
+
+header.nav ul li a:hover {
+    color: lightblue;
+}
+
+@media (max-width: 768px) {
+    header.nav {
+        display: block;
+    }
+
+    header.nav div.logo span.toggleIcon {
+        display: block;
+    }
+
+    header.nav ul {
+        display: none;
+    }
+
+    header.nav ul.open {
+        display: block;
+    }
+
+    header.nav ul li {
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    header.nav ul li:last-child {
+        margin-bottom: 10px;
+    }
+}
